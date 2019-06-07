@@ -1,0 +1,2 @@
+class DirectDonate < ApplicationRecord
+end

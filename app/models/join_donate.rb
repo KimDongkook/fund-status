@@ -1,0 +1,2 @@
+class JoinDonate < ApplicationRecord
+end
