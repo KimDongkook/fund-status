@@ -1,2 +1,29 @@
-<h1>Fundraise#index</h1>
-<p>Find me in app/views/fundraise/index.html.erb</p>
+<h1>Fundraise Status</h1>
+
+<table>
+  <thead>
+    <th>id</th>
+    <th>fundraising_name</th>
+    <th>user_name</th>
+    <th>wholeSum</th>
+    <th>directSum</th>
+    <th>directCnt</th>
+    <th>joinSum</th>
+    <th>joinCnt</th>
+    <th>lastDonatedDate</th>
+  </thead>
+  <tbody>
+    <% @fundraises.each do |fundraise| %>
+    <tr>
+      <td><%= fundraise.id %></td>
+      <td><%= fundraise.fundraising_name %></td>
+      <td><%= fundraise.user_name %></td>
+      <td><%= fundraise.wholeSum %></td>
+      <td><%= fundraise.directSum %></td>
+      <td><%= fundraise.directCnt %></td>
+      <td><%= fundraise.joinSum %></td>
+      <td><%= fundraise.joinCnt %></td>
+      <td><%= fundraise.lastDonatedDate %></td>
+    </tr> <% end %>
+  </tbody>
+</table>

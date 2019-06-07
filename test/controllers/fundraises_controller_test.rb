@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class FundraiseControllerTest < ActionDispatch::IntegrationTest
+class FundraisesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get fundraise_index_url
+    get fundraises_index_url
     assert_response :success
   end
 
