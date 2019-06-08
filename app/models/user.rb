@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many :fundraises, :foreign_key => 'user_id'
+  has_many :fundraises, -> { includes :donates, :direct_donates, :join_donates }
 end

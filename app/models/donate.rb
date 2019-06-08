@@ -1,4 +1,5 @@
 class Donate < ApplicationRecord
-  has_many :direct_donates, :foreign_key => 'donate_id'
-  has_many :join_donates, :foreign_key => 'donate_id'
+  belongs_to :fundraise, :foreign_key => 'fundraise_id'
+  has_one :direct_donate
+  has_one :join_donate
 end
