@@ -1,10 +1,10 @@
 class FundraisesController < ApplicationController
   def index
-    @fundraises = Fundraise
+    @fundraises = User
     .select("fundraises.id, fundraises.fundraising_name, users.user_name, sum(direct_donates.amount) + sum(join_donates.amount) as wholeSum
     , sum(direct_donates.amount) as directSum, count(direct_donates.id) as directCnt
     , sum(join_donates.amount) as joinSum, count(join_donates.id) as joinCnt, max(donates.donated_date) as lastDonatedDate")
-    .left_outer_joins(:user, donates: [:direct_donate, :join_donate])
+    .left_outer_joins(fundraises:[ donates: [:direct_donate, :join_donate]])
     .group("fundraises.id, fundraises.fundraising_name, users.user_name")
 
     # .joins("INNER JOIN users
