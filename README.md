@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Fund-Status
 
-Things you may want to cover:
+* Ruby version : ruby 2.5.5p157 (2019-03-15 revision 67260) [x64-mingw32]
 
-* Ruby version
+* Ruby on rails version : Rails 5.2.3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Database version : mysql community server 5.7.23
