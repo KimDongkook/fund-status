@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fundraise_id: MyString
+  bigInt: MyString
+  donate_id: MyString
+  bigInt: MyString
+  amount: MyString
+  integer: MyString
+
+two:
+  fundraise_id: MyString
+  bigInt: MyString
+  donate_id: MyString
+  bigInt: MyString
+  amount: MyString
+  integer: MyString

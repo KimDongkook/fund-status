@@ -1,0 +1,29 @@
+<h1>모금함 현황</h1>
+
+<table>
+  <thead>
+    <th>ID</th>
+    <th>모금함 이름</th>
+    <th>모금 제안자 이름</th>
+    <th>기부금액 총 합</th>
+    <th>직접기부금 합</th>
+    <th>직접기부 건수</th>
+    <th>참여기부금 합</th>
+    <th>참여기부 건수</th>
+    <th>마지막 기부 시간</th>
+  </thead>
+  <tbody>
+    <% @fundraises.each do |fundraise| %>
+    <tr>
+      <td><%= fundraise.id %></td>
+      <td><%= fundraise.fundraising_name %></td>
+      <td><%= fundraise.user_name %></td>
+      <td><%= fundraise.wholeSum %></td>
+      <td><%= fundraise.directSum %></td>
+      <td><%= fundraise.directCnt %></td>
+      <td><%= fundraise.joinSum %></td>
+      <td><%= fundraise.joinCnt %></td>
+      <td><%= fundraise.lastDonatedDate %></td>
+    </tr> <% end %>
+  </tbody>
+</table>
