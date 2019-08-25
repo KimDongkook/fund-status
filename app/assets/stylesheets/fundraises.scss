@@ -11,6 +11,10 @@ th, td {
     padding: 10px;
   }
 
+tr:nth-child(even){
+  background-color: #EEEEEE;
+}
+
 th{
   background-color: #BBBBBB;
 }

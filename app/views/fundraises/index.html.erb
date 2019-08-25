@@ -18,12 +18,12 @@
       <td><%= fundraise.id %></td>
       <td><%= fundraise.fundraising_name %></td>
       <td><%= fundraise.user_name %></td>
-      <td><%= fundraise.wholeSum %></td>
-      <td><%= fundraise.directSum %></td>
+      <td><%= fundraise.wholeSum.nil? ? '0' : fundraise.wholeSum %></td>
+      <td><%= fundraise.directSum.nil? ? '0' : fundraise.directSum %></td>
       <td><%= fundraise.directCnt %></td>
-      <td><%= fundraise.joinSum %></td>
+      <td><%= fundraise.joinSum.nil? ? '0' : fundraise.joinSum %></td>
       <td><%= fundraise.joinCnt %></td>
-      <td><%= fundraise.lastDonatedDate %></td>
+      <td><%= fundraise.lastDonatedDate.nil? ? 'No Data' : fundraise.lastDonatedDate %></td>
     </tr> <% end %>
   </tbody>
 </table>
